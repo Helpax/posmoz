@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+
+  <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th style="width: 10px">#</th>
+                    <th>Nome</th>
+                    <th>Apelido</th>
+                    <th>Cidade</th>
+                    <th>usd</th>
+                    <th>Valor Total</th>
+                    <th>Codigo de ass</th>
+                    <th>Link</th>
+                    <th>Email</th>
+                    <th>Paypal</th>
+                    <th style="width: 60px">Admin</th>
+                    <th style="width: 140px">&nbsp;</th>
+                  </tr>
+                </thead>
+                <tbody>
+                <!--array tpl-->
+                  {loop="$users"}
+                  <tr>
+                    <td>{$value.id}</td>
+                    <td>{$value.nome}</td>
+                    <td>{$value.apelido}</td>
+                    <td>{$value.cidade}</td>
+                    <td>{$value.usd}</td>
+                    <td>{$value.valortotal}</td>
+                    <td>{$value.cdassinatura}</td>
+                    <td>{$value.link}</td>
+                    <td>{$value.email}</td>
+                    <td>{$value.paypal}</td>
+
+                    <td>
+                      <a href="/admin/users/{$value.id}" class="btn btn-primary btn-xs"><i class="fa fa-edit"></i> Editar</a>
+                      <a href="/admin/users/{$value.id}/delete" onclick="return confirm('Deseja realmente excluir este registro?')" class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
+                    </td>
+                  </tr>
+                  {/loop}
+                </tbody>
+              </table>
+              
+</body>
+</html>

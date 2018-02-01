@@ -1,0 +1,87 @@
+<div class="container separacao">
+		<div class="row">
+			<div class="col-sm-12"></div>
+
+		</div>
+		<div class="row">
+			<div class="formulario-home">
+				<div class="col-sm-12">
+				<div class="col-sm-6">
+
+				<h2 align="left">Dados Pessoais </h2>
+				<hr>
+					<form method="post" action="/pedido">
+						<label>Nome <span>*</span></label><br>
+						<input type="text" name="nome" placeholder="Seu Nome"><br>
+
+						<label>Apelido</label><br>
+						<input type="text" name="apelido" placeholder="Seu Apelido"><br>
+
+						<label>BI <span>*</span></label><br>
+						<input type="number" name="bi" placeholder="Seu BI"><br>
+						<small id="emailHelp" class="form-text text-muted">Nunca compartilharemos seu BI ou outros dados com ninguém.</small><br>
+						<div class="sexo_cidade">
+						<div class="row">
+						<div class="col-sm-6">
+						<label>Cidade <span>*</span></label><br>
+						<select name="cidade">
+
+							<option>Maputo</option>
+							<option>Matola</option>
+							<option>Sofala</option>
+							<option>Tete</option>
+							<option>Beira</option>
+							<option>Zambezia</option>
+							<option>Gaza</option>
+							<option>Quelimane</option>
+							<option>Nampula</option>
+
+						</select><br>
+						</div>
+						<div class="col-sm-6">
+						<label>Sexo <span>*</span></label><br>
+						<select name="sexo">
+
+							<option>Masculino</option>
+							<option>Femenino</option>
+							<option>Outro</option>
+
+						</select><br>
+
+						</div>
+						</div>
+
+						</div>
+						<div class="row">
+						<div class="col-sm-12">
+						<div class="alert alert-warning" role="alert">
+  						<strong>Aviso!</strong> Todos os campos com <span>*</span> devem ser prechidos obrigatoriamente.
+  						</div><br>
+						</div><br>
+						</div>
+				</div>
+				<div class="col-sm-6">
+					<h2 align="left">Dados para Contacto & PayPal </h2>
+					<hr>
+						<label>Email <span>*</span></label><br>
+						<input type="email" name="email" placeholder="Seu Email"><br>
+						<small id="emailHelp" class="form-text text-muted">Nunca compartilharemos seu email ou outros dados com ninguém.</small><br>
+
+						<label>Telefone Celular </label><br>
+						<input type="tel" size="12" name="celular" placeholder="Exemplo +258841234567"><br>
+
+						<label>Valor em USD <span>*</span></label><br>
+						<input type="number" name="usd" placeholder="Montante"><br>
+
+						<label>Paypal Email <span>*</span></label><br>
+						<input type="email" name="pmail" placeholder="Seu Email do Paypal"><br>
+
+						<input type="submit" value="Enviar" name=" Enviar">
+				</div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+
+</div>
